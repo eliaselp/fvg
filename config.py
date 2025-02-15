@@ -44,14 +44,14 @@ url_base = "https://yungia.pythonanywhere.com/"
 #url_base = "http://localhost:8000"
 uid = 'e1be501d'
 api_private_key_sign = '''-----BEGIN PRIVATE KEY-----
-MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg/fLVwKjgNzVe+mgf
-oKvuJtbmm279IWlsd2QbMe5LweChRANCAATsZlFSCuxBk+ZLZnu4kcUhVXCaSZFs
-F5eA7WP2aCbPCZ82OaQOXCrO+3mp7FPJr6fSpoSBFeb/l9J1LYfZ+bAG
+MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQghnJr1DuQVo68tbXu
+7Z89GIC8reoOax2tjMzeQsskyFmhRANCAAQcexSx4PzjcHJ1blGN2JG37fzS/2JC
+hwcS3lggBx7Rgg15AJXt1DdnlJSjfjQCInLtmam0qEqC+JLzmQsuGQcE
 -----END PRIVATE KEY-----
 '''
 api_public_key_auth = '''-----BEGIN PUBLIC KEY-----
-MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7GZRUgrsQZPmS2Z7uJHFIVVwmkmR
-bBeXgO1j9mgmzwmfNjmkDlwqzvt5qexTya+n0qaEgRXm/5fSdS2H2fmwBg==
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEHHsUseD843BydW5RjdiRt+380v9i
+QocHEt5YIAce0YINeQCV7dQ3Z5SUo340AiJy7ZmptKhKgviS85kLLhkHBA==
 -----END PUBLIC KEY-----
 '''
 

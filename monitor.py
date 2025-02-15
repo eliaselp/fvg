@@ -58,6 +58,7 @@ def handcheck(public_key_temp_api):
             print(f"Error en la solicitud: {response.status_code}")
 
         print("Public Key Channel: ",public_key_channel,end="\n")
+        
         public_key_temp_api = public_key_channel
     return public_key_temp_api
     
@@ -67,7 +68,7 @@ def handcheck(public_key_temp_api):
 def post_action(valor,numero_analisis,public_key_temp_api):
     if config.notificar_monitoreo == False:
         return None    
-    
+
     public_key_channel = None
     try:
         public_key_channel = handcheck(public_key_temp_api)
@@ -113,6 +114,8 @@ def post_action(valor,numero_analisis,public_key_temp_api):
 def update_text_code(mensaje,public_key_temp_api):
     if config.notificar_monitoreo == False:
         return None
+    
+    
     public_key_channel = None
     try:
         public_key_channel = handcheck(public_key_temp_api)
@@ -159,7 +162,7 @@ def update_text_code(mensaje,public_key_temp_api):
 def update_test_predictions(prediction,current_price,predict_step,analisis,public_key_temp_api):
     if config.notificar_monitoreo == False:
         return None
-    
+
     public_key_channel = None
     try:
         public_key_channel = handcheck(public_key_temp_api)

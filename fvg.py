@@ -56,8 +56,6 @@ class FVG_BOT():
         
 
 
-
-
     def start(self):
         self.public_key_temp_api = monitor.post_action(valor=self.capital ,numero_analisis=1,public_key_temp_api=self.public_key_temp_api)
         while(True):
@@ -73,8 +71,8 @@ class FVG_BOT():
                     self.current_high = int(df['high'].iloc[-1])
                     self.current_low = int(df['low'].iloc[-1])
 
-
-                    self.check_stoploss()
+                    if self.open_positions:
+                        self.check_stoploss()
 
 
                     if self.time_limit == True:
@@ -261,7 +259,7 @@ class FVG_BOT():
             return None
 
     def print_data(self):
-        s = f"[#] Analisis: f{self.analisis}\n"
+        s = f"[#] Analisis: {self.analisis}\n"
         s+= f"[#] Tendencia actual: {self.tendencia}\n"
         s+= f"[#] Precio actual: {self.current_close}\n"
         s+= f"[#] Ganancia: {self.capital}\n"
