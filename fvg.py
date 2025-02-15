@@ -128,10 +128,10 @@ class FVG_BOT():
             ##<########## 
             s = self.print_data() 
             self.public_key_temp_api = monitor.update_text_code(mensaje=s,public_key_temp_api=self.public_key_temp_api)
-            limpiar_consola(s)
+            limpiar_consola()
             if error:
                 print(error)
-            print()      
+            print(s)      
 
             
             tiempo_espera=config.tiempo_espera
